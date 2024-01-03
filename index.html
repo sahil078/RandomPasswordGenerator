@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div id="main">
+        <div class="cont-box">
+            <h1>Generate Random Password!</h1>
+            <div class="form">
+                <div class="input-cont">
+                    <input type="text" id="input-text" placeholder="Password">
+                    <img src="./download.png" alt="Copy png">
+                    <span class="copy"></span>
+                </div>
+                <div class="pass-len">
+                    <div class="pass-cont">
+                        <p>Password Length</p>
+                        <span id="length">0</span>
+                    </div>
+                    <input type="range" min="1" max="15" value="1" step="1" id="range-indi">
+
+                    <div class="selector">
+                        <div>
+                            <input type="checkbox" name="checkbox1" id="upperCase">
+                            <label for="upperCase">Include UpperCase Letters</label>
+                        </div>
+            
+                        <div>
+                            <input type="checkbox" name="checkbox2" id="lowerCase">
+                            <label for="lowerCase">Include lowerCase Letters</label>
+                        </div>
+            
+                        <div>
+                            <input type="checkbox" name="checkbox3" id="numbers">
+                            <label for="numbers">Include Numbers</label>
+                        </div>
+            
+                        <div>
+                            <input type="checkbox" name="checkbox4" id="symbols">
+                            <label for="symbols">Include Symbols</label>
+                        </div>
+                    </div>
+                    <div class="strength">
+                        <p>Strength</p>
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <button>Generate Password</button>
+        
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

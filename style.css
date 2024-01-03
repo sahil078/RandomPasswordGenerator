@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(77, 21, 129);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cont-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main h1{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 1vh;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-cont{
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    box-shadow: 6px 7px 8px -3px lightgreen;
+}
+.input-cont img{
+    height: 5vh;
+    width: 2vw;
+    object-fit: contain;
+    border: none;
+    mix-blend-mode: exclusion;
+    border-radius: 6px;
+    padding: 2px;
+}
+.input-cont input{
+    border: none;
+    outline: none;
+    padding: 0.3vw;
+    font-size: 1.1rem;
+    color: darkorange;
+    background-color: #000;
+}
+.input-cont input::placeholder{
+    color: darkorange;
+}
+.pass-len{
+    margin-top: 1.5vh;
+    width: 100%;
+    padding: 0.5vw;
+    text-align: left;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 6px 7px 8px -3px lightgreen;
+}
+.pass-cont{
+    display: flex;
+    justify-content: space-between;
+}
+.pass-cont p , span{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.pass-len input{
+    margin-top: 1vh;
+    width: 85%;
+}
+
+.selector{
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vh;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 6px 7px 8px -3px grey;
+}
+.selector input, label{
+    cursor: pointer;
+    width: 1vw;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.strength{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1vw;
+}
+
+.strength .progress{
+    height: 3vh;
+    width: 1.5vw;
+    background-color: red;
+    border-radius: 50%;
+}
+
+button{
+    margin-top: 2vh;
+    padding: 0.5vh 0.5vw;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-stretch: semi-condensed;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(214, 77, 27);
+}
+button:hover{
+    box-shadow: 6px 7px 8px -3px rgb(45, 121, 45);;
+}
+button:active{
+    scale: 0.9;
+}
+
+.copy{
+    position: absolute;
+    left: 55vw;
+    top: 25vh;
+    font-size: 1rem;
+    background: #1083b5;
+    padding: 0.4vh;
+    border-radius: 6px;
+    box-shadow: 5px 4px 8px 1px greenyellow;
+}
+
+/* media query */
+@media (max-width: 1000px){
+    #main{
+        background: #000;
+    }
+    .input-cont{
+        height: 8vh;
+    }
+    .input-cont img{
+        width: 5vw;
+    }
+    .pass-len{
+        margin-top: 3vh;
+        width: 100%;
+        height: 100%;
+        padding: 2vw;
+    }
+    .strength{
+        padding-top: 5vw;
+    }
+    
+    .strength .progress{
+        height: 2vh;
+        width: 2vw;
+    }
+    
+    button{
+        margin-top: 4vh;
+        padding: 0.5vh 0.5vw;
+        font-size: 1.2rem;
+    }
+    .copy{
+        position: absolute;
+        left: 68vw;
+        top: 25vh;
+    }
+    input[type=checkbox]{
+        width: 8vw;
+    }
+}
+
+
+
+@media (max-width: 640px){
+    
+    #main{
+        background: #444;
+    }
+    #main h1{
+        font-size: 1.5rem;
+    }
+    .input-cont img{
+        width: 4vw;
+    }
+    .input-cont{
+        height: 8vh;
+    }
+    .pass-len{
+        width: 100%;
+        height: 100%;
+        padding: 1vw;
+    }
+    .strength{
+        padding-top: 5vw;
+    }
+    
+    .strength .progress{
+        height: 3vh;
+        width: 3vw;
+    }
+    
+    button{
+        margin-top: 4vh;
+        padding: 0.5vh 0.5vw;
+        font-size: 1.2rem;
+    }
+    .copy{
+        position: absolute;
+        left: 65vw;
+        top: 20vh;
+    }
+    input[type=checkbox]{
+        width: 8vw;
+    }
+}
+
+@media (max-width: 450px){
+    /* Main content */
+    #main{
+        background: #1083b5;
+    }
+    .input-cont img{
+        width: 6vw;
+    }
+    .input-cont{
+        height: 8vh;
+    }
+    .pass-len{
+        width: 100%;
+        height: 100%;
+        padding: 1.5vw;
+    }
+    .strength{
+        padding-top: 5vw;
+    }
+    
+    .strength .progress{
+        height: 2vh;
+        width: 3vw;
+    }
+    
+    button{
+        margin-top: 4vh;
+        padding: 0.5vh 0.5vw;
+        font-size: 1.2rem;
+    }
+    .copy{
+        position: absolute;
+        left: 70vw;
+        top: 25vh;
+    }
+    input[type=checkbox]{
+        width: 8vw;
+    }
+    
+}
+
+
